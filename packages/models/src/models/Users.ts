@@ -846,6 +846,12 @@ export class UsersRaw extends BaseRaw<IUser, DefaultFields<IUser>> implements IU
 				{
 					nickname: termRegex,
 				},
+				{
+					'customFields.employeeId': termRegex,
+				},
+				{
+					'customFields.location': termRegex,
+				},
 			],
 			active: true,
 			type: {

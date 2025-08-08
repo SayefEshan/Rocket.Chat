@@ -515,6 +515,7 @@ export class SubscriptionsRaw extends BaseRaw<ISubscription> implements ISubscri
 							status: { $first: '$user.status' },
 							statusText: { $first: '$user.statusText' },
 							avatarETag: { $first: '$user.avatarETag' },
+							customFields: { $first: '$user.customFields' },
 						},
 					},
 					// Sort by score

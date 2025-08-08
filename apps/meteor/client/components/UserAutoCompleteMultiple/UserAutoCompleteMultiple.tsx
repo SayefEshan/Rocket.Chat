@@ -24,7 +24,16 @@ const UserAutoCompleteMultiple = ({ onChange, ...props }: UserAutoCompleteMultip
 		queryFn: async () => usersAutoCompleteEndpoint(query(debouncedFilter)),
 	});
 
-	const options = useMemo(() => data?.items.map((user) => ({ value: user.username, label: user.name })) || [], [data]);
+	const options = useMemo(
+		() =>
+			data?.items.map((user) => {
+				const employeeId = user.customFields?.employeeId;
+				const displayName = user.name || user.username;
+				const label = employeeId ? `${displayName} - ${employeeId}` : displayName;
+				return { value: user.username, label };
+			}) || [],
+		[data],
+	);
 
 	return (
 		<AutoComplete

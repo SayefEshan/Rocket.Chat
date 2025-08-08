@@ -8,4 +8,5 @@ export type SpotlightUser = {
 	status: IUser['status'];
 	statusText: IUser['statusText'];
 	avatarETag: IUser['avatarETag'];
+	customFields?: IUser['customFields'];
 };
