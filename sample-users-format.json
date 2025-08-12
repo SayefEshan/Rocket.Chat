@@ -1,0 +1,41 @@
+[
+  {
+    "username": "john.doe",
+    "emails": ["john.doe@company.com"],
+    "name": "John Doe",
+    "employeeId": "EMP001",
+    "location": "New York",
+    "department": "Engineering",
+    "password": "TempPassword001!",
+    "roles": ["user"],
+    "bio": "Senior Software Engineer",
+    "utcOffset": -5,
+    "customFields": {
+      "startDate": "2024-01-15",
+      "manager": "jane.smith"
+    }
+  },
+  {
+    "username": "jane.smith",
+    "emails": ["jane.smith@company.com"],
+    "name": "Jane Smith",
+    "employeeId": "EMP002", 
+    "location": "San Francisco",
+    "department": "Engineering",
+    "password": "TempPassword002!",
+    "roles": ["user", "leader"],
+    "bio": "Engineering Team Lead",
+    "utcOffset": -8
+  },
+  {
+    "username": "bob.wilson",
+    "emails": ["bob.wilson@company.com", "b.wilson@company.com"],
+    "name": "Bob Wilson",
+    "employeeId": "EMP003",
+    "location": "London",
+    "department": "Marketing",
+    "password": "TempPassword003!",
+    "roles": ["user"],
+    "bio": "Marketing Specialist"
+  }
+]
