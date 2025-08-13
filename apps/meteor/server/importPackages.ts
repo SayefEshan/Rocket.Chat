@@ -4,6 +4,7 @@ import '../app/api/server';
 import '../app/apple/server';
 import '../app/assets/server';
 import '../app/authorization/server';
+import '../app/autologin/server';
 import '../app/autotranslate/server';
 import '../app/bot-helpers/server';
 import '../app/channel-settings/server';
