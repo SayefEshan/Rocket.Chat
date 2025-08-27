@@ -71,14 +71,14 @@ export const createGeneralSettings = () =>
 				public: true,
 			},
 		);
-		await this.add('Site_Name', 'Rocket.Chat', {
-			type: 'string',
-			public: true,
-			wizard: {
-				step: 3,
-				order: 0,
-			},
-		});
+	await this.add('Site_Name', 'Genusys Inc.', {
+		type: 'string',
+		public: true,
+		wizard: {
+			step: 3,
+			order: 0,
+		},
+	});
 		await this.add('Document_Domain', '', {
 			type: 'string',
 			public: true,
